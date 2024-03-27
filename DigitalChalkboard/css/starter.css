@@ -1,0 +1,12 @@
+p:hover {
+    color:blue !important;
+}
+h1{
+    font-size: larger;
+    color:maroon;
+}
+
+h3 {
+    color:rebeccapurple;
+}
+#second {color:darkmagenta;}
