@@ -1,0 +1,35 @@
+
+body {
+    background-color: black;
+}
+.column {
+        float: left;
+        }
+.left {
+        width: 10%;
+        }
+.middle {
+        width: 20%;
+        }
+.right {
+        width: 50%;
+        }
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+h1 {
+    color:springgreen;
+    font-size: small;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align:center;
+    font-weight: 100;
+}
+h3 {
+    color:springgreen;
+    font-size: small;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 100;
+}
+
