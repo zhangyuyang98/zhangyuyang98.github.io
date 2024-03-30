@@ -1,0 +1,39 @@
+
+table {
+    border: 5px solid black;
+    font-family: "Oswald", sans-serif;
+    font-size: medium;
+    letter-spacing: 1px;
+  }
+
+
+.a{list-style-type: lower-roman;}
+.b{list-style-type: square;}
+.c{list-style-type: lower-alpha;}
+.d{list-style-type: "$  ";}
+.e{list-style-type: "\1F52D";}
+
+li::first-letter {
+    font-size: 110%; 
+    font-weight: bold;
+}
+
+
+.navbar {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none; 
+    color:lightyellow !important;
+}
+.navbar:visited {
+    color: darkmagenta
+}
+.navbar:hover {
+    color: blue !important;
+}
+
+.main-link{
+    color: red;
+}
+
+
