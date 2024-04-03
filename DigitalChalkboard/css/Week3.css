@@ -32,8 +32,25 @@ li::first-letter {
     color: blue !important;
 }
 
-.main-link{
-    color: red;
+.list-link{
+    color: blue;
+    text-decoration: none;
+}
+.list-link:visited{
+    color: blueviolet;
+}
+.list-link:hover{
+    color: greenyellow;
 }
 
+.main-link{
+    color: palevioletred;
+    text-decoration: none;
+}
+.main-link:visited{
+    color: blueviolet;
+}
+.main-link:hover{
+    color: blue;
+}
 
