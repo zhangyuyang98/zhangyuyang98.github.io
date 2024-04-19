@@ -30,9 +30,9 @@
     var sound = new Howl({
       src: [`media/${animalSound}.mp3`, `media/${animalSound}.webm`],
       sprite: {
-        Fox: [0, 3000],
-        Dog: [0, 3000],
-        Cat: [0, 3000],
+        Fox: [0, 2000],
+        Dog: [0, 2000],
+        Cat: [0, 2000],
       }
     });
     sound.play(animalSound);
