@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>DigitalChalkboard Week4</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"/>
+        <!-- Css Stylesheet-->
+        <link href="css/Week4.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+<!-- This is navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary my-lg-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Yuyang Digital Humanities Week 4</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Digital Humanities Assignments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item bg-primary" href="week1.html">Digital Chalkboard Week 1</a></li>
+                  <li><a class="dropdown-item bg-primary" href="DigitalChalkboardWeek3.html">Digital Chalkboard Week 2</a></li>
+                  <li><a class="dropdown-item bg-primary" href="week3.html">Digital Chalkboard Week 3</a></li>
+                </ul>
+              </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        </header>
+        <main>
+
+
+<!-- This is week 5-1-->
+            <div class="container my-4">
+                <div>Trivia question</div>  
+                <form id="triviaForm" onsubmit="trivia(); event.preventDefault()">
+                    <div class="row">
+                        <div class="col">
+                            <p>What is the capital of France?</p>
+                            <input id="triviaInput" name="inputTerm" type="text" class="form-control" placeholder="Your answer" style="width:40vw">
+                        </div>    
+                    </div>
+                </form>
+            </div> 
+        
+        <div class="container my-4">
+            <button id="button3" type="submit" class="btn btn-success btn-md" onclick="trivia()">Submit</button>
+            <div id="responseDiv"></div>
+        </div>
+           
+<!-- This is week 5-2-->
+<div class="container my-4">
+    <div>Enter a five digit number like 12345.</div>
+    <form id="evalForm" onsubmit="evalNum(); event.preventDefault()">
+        <div class="row">
+            <div class="col">
+                <p>What is your number?</p>
+      <input id="numberInput" name="inputTerm" type="text" class="form-control" placeholder="Your number" style="width:40vw">
+    </div>
+</div>
+</form>
+</div>
+
+<div class="container my-4">
+    <button id="button4" type="submit" class="btn btn-success btn-md" onclick="evalNum()">Submit</button>
+    <div id="numResponseDiv"></div>
+</div>
+
+
+
+<!-- This is table-->
+<div class="container">
+<div class="row gy-3 gx-3">
+    <div class="col-sm mx-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at fermentum leo. Nam gravida congue elit, luctus ultricies lacus commodo id. Maecenas sed mauris at mi bibendum lacinia. Sed sed ligula suscipit odio pellentesque hendrerit eget ut leo.</div>
+    <div class="col-sm mx-1">Fusce accumsan ultricies ipsum, nec tempor nunc posuere ac. Nulla elit ante, iaculis et posuere et, faucibus eu diam. Vestibulum dolor mauris, venenatis et laoreet quis, convallis ut orci. Vivamus vel risus id dui rutrum varius sit amet non nulla.</div>
+    <div class="col-sm mx-1">Fusce sed efficitur risus. Nulla ut libero maximus ligula blandit rutrum ac a dolor. In elementum pretium lectus, vitae sodales velit. Etiam lorem nulla, lacinia eget tempus et, mattis eget ante. Proin a sollicitudin risus, non finibus augue.</div>
+    <div class="col-sm mx-1">Sed in turpis non erat euismod facilisis. In vitae rutrum tellus. Donec ipsum justo, finibus sed ante sit amet, gravida porta purus. Nam vulputate, ex sit amet sollicitudin luctus, nulla dolor fringilla nulla, non dictum ex mauris a enim.</div>
+</div>
+</div>
+
+<!-- This is button-->
+<div class="container mt-4">
+    <div class="row">
+       <div class="col text-center">
+        <button id="button1" class="btn btn-info btn-md">Greetings</button>
+       </div>
+       <div class="col text-center">
+        <button id="button2" class="btn btn-primary btn-md">Submit</button>
+       </div>
+    </div>
+    </div>
+
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        
+        <script src="js/Week5.js"></script>
+
+    </body>
+</html>
