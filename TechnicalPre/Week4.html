@@ -15,6 +15,8 @@
             crossorigin="anonymous"/>
         <!-- Css Stylesheet-->
         <link href="css/Week4.css" rel="stylesheet"/>
+        <!--jquery CND call-->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <style>
     .uniform-height-img{
         width: 100%;
@@ -27,46 +29,16 @@
     </head>
 
     <body>
-        <header>
-<!-- This is navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary my-lg-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Yuyang Digital Humanities Week 4</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <header>
+        <!-- place navbar here -->
+        <div id="nav-placeholder"></div>
+        <script src="../nav.js"></script>
+    </header>
+        <!--End Nav Bar-->
+        <div class="container-content" style="min-height: calc(100vh - 150px);">
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Digital Humanities Assignments
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item bg-primary" href="/DigitalChalkboard/week1.html">Digital Chalkboard Week 1</a></li>
-                  <li><a class="dropdown-item bg-primary" href="/DigitalChalkboard/Week3.html">Digital Chalkboard Week 2</a></li>
-                  <li><a class="dropdown-item bg-primary" href="/DigitalChalkboard/DigitalChalkboardWeek3.html">Digital Chalkboard Week 3</a></li>
-                </ul>
-              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
-        </li>
 
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-        </header>
-        
-        <main>
 <div class="container-fluid text-black text-center">
     <h1 class="display-6">TecnicalPre Week4</h1>
     <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -295,11 +267,14 @@
     </button>
   </div>
 
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+        
+</div>
+<footer>
+    <!-- place footer here -->
+    <div id="footer-placeholder"></div>
+    <script src="../footer.js"></script>
+</footer>
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

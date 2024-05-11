@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Contact</title>
+        <title>DigitalChalkboard Week8</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -27,14 +27,40 @@
             <script src="../nav.js"></script>
         </header>
             <!--End Nav Bar-->
-            <div class="container-content" style="min-height: calc(100vh - 150px);">
-                <h1>Contact</h1>
-
-
-
-
-                
+            <div class="container-content mt-4" style="min-height: calc(100vh - 150px); text-align: center;">
             
+            <div class="container">
+                
+                <!--Function 1-->
+                <h3>Search for an Instrument MBID</h3>
+                <h4>For example:guitar</h4>
+                <input type="text" id="instrumentName" placeholder="Enter instrument name">
+                <button onclick="searchInstrument()">Search</button>
+                <div id="results"></div>
+
+                <script src="js/Week8Instrument.js"></script>
+            </div>
+
+            <div class="container">
+                <!--Function 2 Create an input field that allows the user to input a search term to search for an artist-->
+                <h3>Search for artist and music</h3>
+                <h4>For example:Taylor</h4>
+                <input type="text" id="searchInput" placeholder="Enter artist or band name">
+                <button onclick="searchArtist()">Search</button>
+                <div id="artistResults" style="text-align: left;"></div>
+                <table id="albumTable" style="display: none;">
+                    <thead>
+                    <tr>
+                        <th>Release Date</th>
+                        <th>Album Name</th>
+                    </tr>
+                    </thead>
+                    <tbody id="albumList"></tbody>
+                </table>
+                <script src="js/Week8Artist.js"></script>
+
+            </div>
+
             </div>
         <footer>
             <!-- place footer here -->
@@ -42,7 +68,6 @@
             <script src="../footer.js"></script>
         </footer>
 
-        
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
