@@ -1,0 +1,1 @@
+$(function () {$("#nav-placeholder").load("/Caravaggio/navbar.html");});
