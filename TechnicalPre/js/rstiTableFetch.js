@@ -14,7 +14,9 @@ var url = 'https://ochre.lib.uchicago.edu/ochre?uuid=accd571b-bae3-4d42-93d9-58b
 function loadXML() {
   const xmlFilePath = 'media/sample.xml';
   fetch(xmlFilePath)
+  //promise turn the response into text
   .then(response => response.text())
+  //send the thing you get to a parser/DOMParser
   .then(data =>
     parseData(data)
   )
@@ -24,11 +26,14 @@ function loadXML() {
 };
 
 // NOTE how this is different from the XHR approach
+//a more modular approach
+//passing one function to another they lose parameter, have to pass along to nect function
 function parseData(xmlData){
   const parser = new DOMParser();
   const xmlDoc = parser.parseFromString(xmlData, 'application/xml');
   createHeaders(xmlDoc),
   listTexts(xmlDoc);
+//objectData=xmlDoc.getELementByTagName
 };
 
 function createHeaders(sourceXML){
@@ -61,4 +66,5 @@ function listTexts(sourceXML){
     document.getElementById('row_' + i).appendChild(td2);
   };
 }
+//locate a property by uuid 
 

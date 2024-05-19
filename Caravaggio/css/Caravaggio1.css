@@ -6,7 +6,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .warning{
-    font-size: medium;
+    font-size: larger;
     text-align: center;
     color: rgb(216, 214, 214);
     background-color: rgba(40, 40, 40, 0.821);
