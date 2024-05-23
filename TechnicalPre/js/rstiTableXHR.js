@@ -54,6 +54,7 @@ function listTexts(sourceXML){
   console.log(sourceXML);
   var textList = sourceXML.getElementsByTagName('text');
   console.log(textList);
+  
   //textList is html collection
   for (i=0; i < textList.length; i++) {
     //create one row per item
