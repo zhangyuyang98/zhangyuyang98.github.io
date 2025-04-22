@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:1226px;
+            height: 615px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+        .left{
+            width: 234px;
+            height: 615px;
+            background-color: purple;
+            float: left;
+        }
+        .right{
+            width: 992px;
+            height: 615px;
+            background-color: saddlebrown;
+            float: left;
+        }
+        .right>div{
+            width: 230px;
+            height: 300px;
+            background-color: #1ebe8e;
+            float: left;
+            margin-left: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="xxx.php" method="get">
+    <table width="600" height="300">
+        <!-- border="1"可以显示边框 -->
+        <th colspan="2" align="left">青春不常在 抓紧谈恋爱</th>
+        <tr>
+            <td>性别</td>
+            <td> 
+                <label for="sex1">男</label><input type="radio" name="sex" id="sex1">
+                <label for="sex2">女</label><input type="radio" name="sex" id="sex2">
+            </td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>
+                <select>
+                    <option selected= "selected">--请选择年--</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                </select>
+                <select>
+                    <option selected= "selected">--请选择月--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select>
+                    <option selected= "selected">--请选择日--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text" name="username" value="请输入所在地区" maxlength="6"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况</td>
+            <td>
+            <label for="marriage1">未婚</label><input type="radio" name="marriage" id="marriage1">
+            <label for="marriage2">已婚</label><input type="radio" name="marriage" id="marriage2">
+            <label for="marriage3">离婚</label><input type="radio" name="marriage" id="marriage3">
+            </td>
+        </tr>
+        <tr>
+            <td>自我介绍</td>
+            <td>
+                <textarea rows="3" cols="20">文本内容</textarea><br />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit"value="免费注册"><br />
+                <input type="checkbox" checked="checked">我同意注册条款和会员加入标准
+            </td>
+        </tr>
+    </table>
+    </form>
+        <hr>
+
+        <div class="box">
+            <div class="left">左青龙</div>
+            <div class="right">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+        </div>
+
+    </table>
+</form>
+</body>
+</html>
