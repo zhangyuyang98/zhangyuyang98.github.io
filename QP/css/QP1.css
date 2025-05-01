@@ -40,6 +40,12 @@
   margin-top: 20px;
 }
 
+.nav-link{
+  text-align: center;
+  font-weight: 800;
+  font-size: large;
+}
+
 .block{
   text-align: center;
   width: 100px;
@@ -155,7 +161,7 @@ label {
 
 article { 
   width: 80px;
-  height: 145px;  
+  height: 220px;  
   overflow: hidden; 
   -webkit-transition: width .25s linear, opacity .2s linear; 
   transition: width .25s linear, opacity .3s linear; 

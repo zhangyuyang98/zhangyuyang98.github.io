@@ -1,9 +1,12 @@
 .contentInnerPage {
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
+
 
 body {
     --s: 50px;
@@ -52,8 +55,8 @@ a {
 }
 
 .uniform-height-img-inpage {
-    width: 40%;
-    height: 35%;
+    width: 450px;
+    height: 630px;
     margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 10px;
